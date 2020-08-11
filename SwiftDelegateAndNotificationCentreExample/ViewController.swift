@@ -16,6 +16,12 @@ class ViewController: UIViewController, ActionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        // Set observer
+        NotificationCenter.default.addObserver(self, selector: #selector(updateLabelV2), name: NSNotification.Name(rawValue: "SAY_BYE"), object: nil)
+    }
+    
+    @objc func updateLabelV2(){
+        print("ini di panggil oleh observer")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,6 +33,6 @@ class ViewController: UIViewController, ActionDelegate {
     
     func updateLabel(text: String) {
         print("Ini dari View Controller pertama")
-        print(text)
+        labelGreeting.text = text
     }
 }

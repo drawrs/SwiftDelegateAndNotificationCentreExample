@@ -25,6 +25,17 @@ class ActionViewController: UIViewController {
     
     @IBAction func actionHai(_ sender: UIButton) {
         delegate?.updateLabel(text: "Hai Bro")
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func actionSayKumusta(_ sender: Any) {
+        delegate?.updateLabel(text: "Kumusta!")
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func actionHoi(_ sender: Any) {
+        delegate?.updateLabel(text: "Hoi!")
+        dismiss(animated: true, completion: nil)
     }
     
 }

@@ -14,6 +14,7 @@
 		3631D70724E22FF500EFADDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3631D70624E22FF500EFADDE /* Assets.xcassets */; };
 		3631D70A24E22FF500EFADDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3631D70824E22FF500EFADDE /* LaunchScreen.storyboard */; };
 		36BEE5CA24E2472E008391A4 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BEE5C924E2472E008391A4 /* ActionViewController.swift */; };
+		36BEE5CC24E2919F008391A4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BEE5CB24E2919F008391A4 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3631D70924E22FF500EFADDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3631D70B24E22FF500EFADDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36BEE5C924E2472E008391A4 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		36BEE5CB24E2919F008391A4 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3631D70824E22FF500EFADDE /* LaunchScreen.storyboard */,
 				3631D70B24E22FF500EFADDE /* Info.plist */,
 				36BEE5C924E2472E008391A4 /* ActionViewController.swift */,
+				36BEE5CB24E2919F008391A4 /* ThirdViewController.swift */,
 			);
 			path = SwiftDelegateAndNotificationCentreExample;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				3631D70224E22FF400EFADDE /* ViewController.swift in Sources */,
 				3631D6FE24E22FF400EFADDE /* AppDelegate.swift in Sources */,
+				36BEE5CC24E2919F008391A4 /* ThirdViewController.swift in Sources */,
 				36BEE5CA24E2472E008391A4 /* ActionViewController.swift in Sources */,
 				3631D70024E22FF400EFADDE /* SceneDelegate.swift in Sources */,
 			);

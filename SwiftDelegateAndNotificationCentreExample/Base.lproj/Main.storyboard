@@ -65,11 +65,25 @@
                                     <string key="title">Say Kumusta
 </string>
                                 </state>
+                                <connections>
+                                    <action selector="actionSayKumusta:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="zMq-3I-joC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRn-9l-c98">
                                 <rect key="frame" x="158" y="467" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Say Hoi"/>
+                                <connections>
+                                    <action selector="actionHoi:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="3PD-lN-bkX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ST-9I-6kZ">
+                                <rect key="frame" x="161" y="624" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to third vc"/>
+                                <connections>
+                                    <segue destination="tOS-Mn-wrR" kind="show" id="Z7c-bC-wfn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -80,6 +94,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCf-g0-J1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="69.565217391304358" y="54.910714285714285"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="kai-Js-Y6F">
+            <objects>
+                <viewController id="tOS-Mn-wrR" customClass="ThirdViewController" customModule="SwiftDelegateAndNotificationCentreExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Kb-ws-UGU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puc-Jn-S2P">
+                                <rect key="frame" x="157" y="406" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Do something!"/>
+                                <connections>
+                                    <action selector="doSomething:" destination="tOS-Mn-wrR" eventType="touchUpInside" id="uKr-BV-ojz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="T7W-6b-VzI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kvX-zw-luc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z8f-Ue-lgi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="55"/>
         </scene>
     </scenes>
 </document>
