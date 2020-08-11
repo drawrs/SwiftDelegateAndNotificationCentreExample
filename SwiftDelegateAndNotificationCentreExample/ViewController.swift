@@ -10,19 +10,28 @@ import UIKit
 
 class ViewController: UIViewController, ActionDelegate {
 
+    @IBOutlet weak var labelName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Segue di panggil")
-        let destinationVC = segue.destination as! ActionViewController
-        destinationVC.delegate = self
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        print("Segue di panggil")
+//        let destinationVC = segue.destination as! ActionViewController
+//        destinationVC.delegate = self
+//    }
+    
+    @IBAction func btnPressed(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ActionViewController") as! ActionViewController
+        vc.delegate = self
+        self.present(vc, animated: true, completion: nil)
     }
     
     func updateLabel(text: String) {
+        labelName.text = "Say \(text)"
         print("Ini di print dari View Contoller Pertama! \(text)")
     }
 }

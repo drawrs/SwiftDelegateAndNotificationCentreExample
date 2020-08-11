@@ -24,12 +24,15 @@ class ActionViewController: UIViewController {
     
     @IBAction func actionHai(_ sender: Any) {
         delegate?.updateLabel(text: "Hai!")
+        dismiss(animated: true, completion: nil)
     }
     @IBAction func actionCiao(_ sender: Any) {
         delegate?.updateLabel(text: "Ciao!")
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func actionMalo(_ sender: Any) {
         delegate?.updateLabel(text: "Malo!")
+        dismiss(animated: true, completion: nil)
     }
 }
