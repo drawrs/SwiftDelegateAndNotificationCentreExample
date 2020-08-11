@@ -8,14 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ActionDelegate {
+    
     
     @IBOutlet weak var labelGreeting: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        labelGreeting.text = "Hoi"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Seguenya jalan")
         
+        let destionationVC = segue.destination as! ActionViewController
+        destionationVC.delegate = self
+    }
+    
+    func updateLabel(text: String) {
+        print("Ini dari View Controller pertama")
+        print(text)
     }
 }

@@ -8,16 +8,23 @@
 
 import UIKit
 
+// MARK: 1st Create the procotol
+
+protocol ActionDelegate {
+    func updateLabel(text: String)
+}
+
 class ActionViewController: UIViewController {
+    
+    var delegate: ActionDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelGreeting.
-
+        
     }
     
     @IBAction func actionHai(_ sender: UIButton) {
-        
+        delegate?.updateLabel(text: "Hai Bro")
     }
     
 }
