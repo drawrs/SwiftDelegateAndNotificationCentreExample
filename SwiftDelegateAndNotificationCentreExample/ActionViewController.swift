@@ -12,6 +12,7 @@ class ActionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        labelGreeting.
 
     }
     

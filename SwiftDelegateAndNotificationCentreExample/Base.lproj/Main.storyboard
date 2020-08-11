@@ -26,30 +26,55 @@
                                 <rect key="frame" x="165" y="740" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go to Action"/>
+                                <connections>
+                                    <segue destination="BDV-Tr-ZLD" kind="show" id="X1k-Ju-oRG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="labelGreeting" destination="Dyb-x8-7wA" id="Yli-KS-FcG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730.43478260869574" y="54.910714285714285"/>
+            <point key="canvasLocation" x="-699" y="55"/>
         </scene>
         <!--Action View Controller-->
         <scene sceneID="ObQ-ZW-oVA">
             <objects>
                 <viewController id="BDV-Tr-ZLD" customClass="ActionViewController" customModule="SwiftDelegateAndNotificationCentreExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iQ3-9a-IPC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebh-09-7FU">
-                                <rect key="frame" x="182" y="343" width="52" height="30"/>
+                                <rect key="frame" x="158" y="358" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Say Hai"/>
                                 <connections>
                                     <action selector="actionHai:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="PQ9-1J-d8h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GW-LS-09a">
+                                <rect key="frame" x="158" y="400" width="99" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <string key="title">Say Kumusta
+</string>
+                                </state>
+                                <connections>
+                                    <action selector="actionHai:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="3Jf-XB-xum"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRn-9l-c98">
+                                <rect key="frame" x="158" y="467" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Say Hoi"/>
+                                <connections>
+                                    <action selector="actionHai:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="QxS-ks-yz8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCf-g0-J1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="55"/>
+            <point key="canvasLocation" x="69.565217391304358" y="54.910714285714285"/>
         </scene>
     </scenes>
 </document>
