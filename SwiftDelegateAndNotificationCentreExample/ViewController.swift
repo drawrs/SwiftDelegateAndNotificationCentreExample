@@ -15,6 +15,7 @@ class ViewController: UIViewController, ActionDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     
+        NotificationCenter.default.addObserver(self, selector: #selector(dataChanged(notif:)), name: NOTIFICATION_DID_CHANGE_DATA, object: nil)
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -22,6 +23,11 @@ class ViewController: UIViewController, ActionDelegate {
 //        let destinationVC = segue.destination as! ActionViewController
 //        destinationVC.delegate = self
 //    }
+    
+    @objc func dataChanged(notif: Notification) {
+        let text = notif.object as! String
+        labelName.text = text as String
+    }
     
     @IBAction func btnPressed(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -36,3 +42,4 @@ class ViewController: UIViewController, ActionDelegate {
     }
 }
 
+let NOTIFICATION_DID_CHANGE_DATA = Notification.Name(rawValue: "NOTIFICATION_DID_CHANGE_DATA")
