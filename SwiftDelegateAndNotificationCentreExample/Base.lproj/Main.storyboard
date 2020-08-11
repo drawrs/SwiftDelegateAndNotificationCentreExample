@@ -15,14 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3M-oI-5HD">
-                                <rect key="frame" x="165" y="745" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go to Action"/>
-                                <connections>
-                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TF6-US-z5F"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hai!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyb-x8-7wA">
                                 <rect key="frame" x="135" y="428" width="145" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -30,13 +22,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3M-oI-5HD">
+                                <rect key="frame" x="165" y="740" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to Action"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="labelName" destination="Dyb-x8-7wA" id="lKF-SU-TRs"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,7 +39,7 @@
         <!--Action View Controller-->
         <scene sceneID="ObQ-ZW-oVA">
             <objects>
-                <viewController storyboardIdentifier="ActionViewController" id="BDV-Tr-ZLD" customClass="ActionViewController" customModule="SwiftDelegateAndNotificationCentreExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BDV-Tr-ZLD" customClass="ActionViewController" customModule="SwiftDelegateAndNotificationCentreExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iQ3-9a-IPC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,33 +50,6 @@
                                 <state key="normal" title="Say Hai"/>
                                 <connections>
                                     <action selector="actionHai:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="PQ9-1J-d8h"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWr-dp-HIO">
-                                <rect key="frame" x="178" y="397" width="60" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <string key="title">Say Ciao
-</string>
-                                </state>
-                                <connections>
-                                    <action selector="actionCiao:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="DFh-JT-aNU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozC-1K-Ndm">
-                                <rect key="frame" x="179" y="552" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Say Szia"/>
-                                <connections>
-                                    <action selector="actionSzia:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="rha-VP-OdH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zL-Rm-1ia">
-                                <rect key="frame" x="175" y="475" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Say Malo"/>
-                                <connections>
-                                    <action selector="actionMalo:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="DiR-ur-yeV"/>
                                 </connections>
                             </button>
                         </subviews>
