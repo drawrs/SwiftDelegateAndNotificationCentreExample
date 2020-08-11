@@ -9,17 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController, ActionDelegate {
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Segue di panggil")
-        
         let destinationVC = segue.destination as! ActionViewController
         destinationVC.delegate = self
     }
