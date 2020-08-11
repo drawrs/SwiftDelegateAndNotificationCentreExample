@@ -39,28 +39,40 @@
             </objects>
             <point key="canvasLocation" x="-729" y="55"/>
         </scene>
-        <!--View Controller-->
+        <!--Action View Controller-->
         <scene sceneID="ObQ-ZW-oVA">
             <objects>
-                <viewController id="BDV-Tr-ZLD" sceneMemberID="viewController">
+                <viewController id="BDV-Tr-ZLD" customClass="ActionViewController" customModule="SwiftDelegateAndNotificationCentreExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iQ3-9a-IPC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebh-09-7FU">
-                                <rect key="frame" x="179" y="339" width="57" height="30"/>
+                                <rect key="frame" x="182" y="343" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 1"/>
+                                <state key="normal" title="Say Hai"/>
+                                <connections>
+                                    <action selector="actionHai:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="PQ9-1J-d8h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWr-dp-HIO">
-                                <rect key="frame" x="178" y="406" width="59" height="30"/>
+                                <rect key="frame" x="178" y="397" width="60" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 2"/>
+                                <state key="normal">
+                                    <string key="title">Say Ciao
+</string>
+                                </state>
+                                <connections>
+                                    <action selector="actionCiao:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="DFh-JT-aNU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozC-1K-Ndm">
-                                <rect key="frame" x="178" y="461" width="59" height="30"/>
+                                <rect key="frame" x="175" y="462" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 3"/>
+                                <state key="normal" title="Say Malo"/>
+                                <connections>
+                                    <action selector="actionMalo:" destination="BDV-Tr-ZLD" eventType="touchUpInside" id="sQO-KU-bDl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
