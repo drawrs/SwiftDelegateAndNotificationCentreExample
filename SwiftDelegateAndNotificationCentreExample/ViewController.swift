@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, ActionDelegate {
     
-    
     @IBOutlet weak var labelGreeting: UILabel!
     
     override func viewDidLoad() {
